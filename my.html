@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .book-page {
+            width: auto;
+            height: 500px;
+            margin-top: 10%;
+            margin-bottom: 50px;
+            border: 1px solid #763333;
+            box-shadow: 0 0 5px rgba(119, 80, 80, 0.2);
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .book-page img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+
+        .book-page .passage {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            right: 10px;
+            bottom: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 18px;
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .book-page:hover .passage {
+            opacity: 1;
+        }
+
+        #navigation {
+            margin-top: 20px;
+        }
+
+        #prev-btn,
+        #next-btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #prev-btn {
+            margin-right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="book-container">
+        <!-- Add book pages with images and passages -->
+        <div class="book-page">
+            <img src="my pics/1.JPG" alt="Page 1">
+            <div class="passage">
+                यति ठुलो दुनियामा मेरो भाग्य मा परेको मान्छे हौ तिमि <br> विश्वास गर्नु जीवनको बिहान देखि लिएर चिहान सम्म तिम्रै साथ हुनेछु ।
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/2.JPG" alt="Page 2">
+            <div class="passage">
+                हरेक दिन जिन्दगीको नयाँ पाना पल्टाउन तयार छु <br> तर प्रत्येक पानामा तिम्रै कथा हुनुपर्छ। 
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/3.jpg" alt="Page 3">
+            <div class="passage">
+                यो संसारले मलाई जानोस या नजानोस् ,<br> बस तिम्रो आँखाले चिनिदियोस मेरो लागि त्यति काफी छ <br>माया 
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/4.JPG" alt="Page 4">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/5.jpg" alt="Page 5">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/6.JPG" alt="Page 6">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/7.JPG" alt="Page 7">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/8.JPG" alt="Page 8">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/9.JPG" alt="Page 9">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/10.JPG" alt="Page 10">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/11.JPG" alt="Page 11">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/12.JPG" alt="Page 12">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/13.JPG" alt="Page 13">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/14.JPG" alt="Page 14">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/15.JPG" alt="Page 15">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/16.JPG" alt="Page 16">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/17.JPG" alt="Page 17">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/18.JPG" alt="Page 18">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/19.JPG" alt="Page 19">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/20.JPG" alt="Page 20">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/21.JPG" alt="Page 21">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/22.JPG" alt="Page 22">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/23.JPG" alt="Page 23">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/24.JPG" alt="Page 24">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/25.JPG" alt="Page 25">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/27.JPG" alt="Page 26">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/28.JPG" alt="Page 27">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/29.JPG" alt="Page 28">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/30.JPG" alt="Page 29">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/31.JPG" alt="Page 30">
+            <div class="passage">
+                This is the passage for Page 2.
+            </div>
+        </div>
+
+
+
+
+
+        <div class="book-page">
+            <img src="my pics/32- Last Page.JPG" alt="Last Page">
+            <div class="passage">
+                This is the passage for the Last Page.
+            </div>
+        </div>
+
+        <div class="book-page">
+            <img src="my pics/Back Cover .JPG" alt="Back Cover">
+            <div class="passage">
+                "Every moment spent with you is a precious memory etched in the depths of my soul."
+            </div>
+        </div>
+    </div>
+
+    <div id="navigation">
+        <a id="prev-btn" href="#">Previous</a>
+        <a id="next-btn" href="#">Next</a>
+    </div>
+
+    <script>
+        var currentPageIndex = 0;
+        var bookContainer = document.getElementById("book-container");
+
+        function showCurrentPage() {
+            var pages = bookContainer.getElementsByClassName("book-page");
+            for (var i = 0; i < pages.length; i++) {
+                pages[i].style.display = "none";
+            }
+            pages[currentPageIndex].style.display = "flex";
+        }
+
+        function goToPreviousPage() {
+            if (currentPageIndex > 0) {
+                currentPageIndex--;
+                showCurrentPage();
+            }
+        }
+
+        function goToNextPage() {
+            if (currentPageIndex < 32) {
+                currentPageIndex++;
+                showCurrentPage();
+            }
+        }
+
+        document.getElementById("prev-btn").addEventListener("click", goToPreviousPage);
+        document.getElementById("next-btn").addEventListener("click", goToNextPage);
+
+        showCurrentPage();
+    </script>
+</body>
+</html>
